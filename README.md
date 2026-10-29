@@ -2,7 +2,7 @@
 
 **An exploratory data analysis project using Python, Pandas, NumPy, Matplotlib, and Seaborn to investigate loan defaults and borrower credit risk.**
 
-## 📌 Project Overview
+##  Project Overview
 
 - Analyze customer financial profiles and loan characteristics.
 - Identify loan default patterns across different borrower segments.
@@ -11,7 +11,7 @@
 - Identify high-risk borrower categories through exploratory data analysis.
 - Provide data-driven insights to support better lending decisions and credit risk management.
 
-## 🎯 Objectives
+##  Objectives
 
 - Analyze borrowers' financial profiles and loan characteristics.
 - Explore the distribution of defaulted and non-defaulted loans.
@@ -19,7 +19,7 @@
 - Examine the relationship between loan size relative to income and default status.
 - Identify useful risk indicators and translate findings into business insights for credit assessment.
 
-## 📂 Dataset and Column Guide
+##  Dataset and Column Guide
 
 The project uses a **single CSV file**, not separate customer, loan, and payment tables. The dataset contains these 12 attributes:
 
@@ -38,7 +38,7 @@ The project uses a **single CSV file**, not separate customer, loan, and payment
 | `cb_person_default_on_file` | Whether a prior default is recorded in credit history |
 | `cb_person_cred_hist_length` | Length of credit history in years |
 
-## 🛠️ Tools and Skills
+##  Tools and Skills
 
    1. Python.
    2. Pandas.
@@ -47,8 +47,8 @@ The project uses a **single CSV file**, not separate customer, loan, and payment
    5. Missing Value Treatment.
    6. Exploratory Data Analysis(EDA).
    7. Data Visulization (Matplotlib & Seaborn).
-
-## 🔄 Analysis Workflow
+      
+##  Analysis Workflow
 
 ### Step 1 — Data Loading & Understanding
 
@@ -85,7 +85,7 @@ The notebook answers **eight business questions** using a variety of plots:
 | 8 | Which numerical factors are most strongly correlated with loan defaults? | Correlation heatmap · Seaborn | Linear associations between numerical variables |
 
 
-## 📊 Key Findings
+##  Key Findings
 
 1. **Loan-to-Income Ratio:** An important indicator of financial burden, helping assess potential loan default risk.
 
@@ -98,7 +98,7 @@ The notebook answers **eight business questions** using a variety of plots:
 5. **Credit History:** Previous loan defaults can help identify borrowers requiring closer credit risk assessment.
 
 
-## 💼 Business Insights and Recommendations
+##  Business Insights and Recommendations
 
 1. **Evaluate affordability:** Consider loan-to-income ratio alongside income, existing liabilities, and repayment capacity.
 2. **Monitor credit-grade segments:** Compare default rates across grades and review higher-risk segments more closely.

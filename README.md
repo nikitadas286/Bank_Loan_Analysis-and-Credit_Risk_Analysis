@@ -17,6 +17,21 @@
 - Examine the relationship between loan size relative to income and default status.
 - Identify useful risk indicators and translate findings into business insights for credit assessment.
 
+  
+##  Dataset Information
+
+- **Dataset Name:** Credit Risk Dataset
+- **Source:** Kaggle
+- **Dataset Link:** [Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
+- **File Name:** `credit_risk_dataset.csv`
+- **File Format:** CSV (Comma-Separated Values)
+- **Total Records:** 32,581
+- **Total Columns:** 12
+- **Target Variable:** `loan_status`
+- **Target Categories:**
+  - `0` — Non-defaulted Loan
+  - `1` — Defaulted Loan
+
 ##  Dataset and Column Guide
 
 The project uses a **single CSV file**, not separate customer, loan, and payment tables. The dataset contains these 12 attributes:

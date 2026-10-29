@@ -1,7 +1,5 @@
 # 🏦 Bank Loan & Credit Risk Analytics
 
-**An exploratory data analysis project using Python, Pandas, NumPy, Matplotlib, and Seaborn to investigate loan defaults and borrower credit risk.**
-
 ##  Project Overview
 
 - Analyze customer financial profiles and loan characteristics.

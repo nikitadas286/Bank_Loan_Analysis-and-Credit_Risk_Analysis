@@ -107,3 +107,10 @@ The notebook answers **eight business questions** using a variety of plots:
 ## 🏁 Final Conclusion
 
 This project demonstrates an end-to-end workflow for transforming raw loan data into interpretable credit risk insights. The notebook highlights **loan-to-income ratio, loan grade, and interest rate** as important factors to investigate, with borrower income and credit history providing additional context. The results can inform further credit risk research and portfolio monitoring, but real-world lending decisions require more rigorous validation.
+
+## Author
+
+**Nikita Das**
+
+- [GitHub](https://github.com/nikitadas286)
+- [LinkedIn](https://www.linkedin.com/in/nikita-laki-das-91786b2b3/)

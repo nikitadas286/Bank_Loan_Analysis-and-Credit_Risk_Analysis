@@ -86,17 +86,100 @@ The project uses a **single CSV file**, not separate customer, loan, and payment
 
 The notebook answers **eight business questions** using a variety of plots:
 
-| # | Business question | Chart / library | What it investigates |
-|---|---|---|---|
-| 1 | What percentage of bank loans have defaulted? | Count plot · Seaborn | Distribution of loan outcomes |
-| 2 | How are loan amounts distributed among borrowers? | Histogram · Matplotlib | Typical loan sizes and skewness |
-| 3 | How does borrower income differ between defaulted and non-defaulted loans? | Box plot · Seaborn | Median income and variation by outcome |
-| 4 | Which loan grades have the highest default rates? | Bar plot · Seaborn | Credit grade risk segmentation |
-| 5 | How do interest rates vary between defaulted and non-defaulted loans? | Violin plot · Seaborn | Interest-rate density and quartiles |
-| 6 | Which loan purposes have the highest default rates? | Horizontal bar chart · Matplotlib | Risk differences across loan purposes |
-| 7 | What is the relationship between loan-to-income ratio and loan default risk? | Scatter plot · Seaborn | Income, relative loan size, and outcomes |
-| 8 | Which numerical factors are most strongly correlated with loan defaults? | Correlation heatmap · Seaborn | Linear associations between numerical variables |
+### Q1. What percentage of bank loans have defaulted?
 
+<img width="1015" height="612" alt="1 count plot" src="https://github.com/user-attachments/assets/fececaea-2162-4cdd-bc7f-0313f01e138a" />
+
+
+### Observation: 
+- The count plot compares defaulted and non-defaulted loans. The calculated default rate shows the percentage of loans that defaulted in the dataset.
+
+### Conclusion: 
+- The default rate provides a baseline for understanding the dataset's credit risk.
+- Banks can use default-rate monitoring to identify portfolio deterioration and evaluate whether additional risk controls are needed.
+
+### Q2. How are loan amounts distributed among borrowers?
+
+<img width="1175" height="610" alt="2 histogram" src="https://github.com/user-attachments/assets/e7314628-d148-47b0-a66c-4e6d0c8ce624" />
+
+
+### Observation:
+- Most loan amounts are concentrated between 2,000 and 15,000, with the highest frequencies around 4,000–5,000 and 9,000–10,000 (approximately 3,200 loans per peak bin).
+- The distribution is right-skewed.
+### Conclusion:
+- Small and medium-sized loans dominate the portfolio, indicating higher demand for lower loan amounts.
+
+### Q3. How does borrower income differ between defaulted and non-defaulted loans?
+
+<img width="1206" height="706" alt="3 box plot" src="https://github.com/user-attachments/assets/824d7288-5663-410d-a78b-55f56b6046b9" />
+
+
+### Observation:
+- Non-default borrowers (0) have a higher median annual income compared to default borrowers (1).
+### Conclusion:
+- Lower annual income is associated with higher loan default risk, suggesting that income is an important factor in credit risk assessment.
+- Banks should evaluate borrowers' income stability and repayment capacity before approving loans to minimize potential defaults.
+
+### Q4. Which loan grades have the highest default rates?
+
+<img width="1133" height="567" alt="4 bar plot" src="https://github.com/user-attachments/assets/cbfbded4-108e-4cc9-91f5-6d06820d85ac" />
+
+
+### Observation:
+- Grade A has the lowest default rate, followed by Grade B and Grade C.
+- Default rates increase significantly for Grade D , E, F, and G , indicating a strong relationship between credit grade and loan default.
+### Conclusion:
+- Credit grade is a strong indicator of loan default risk, with lower credit grades showing substantially higher default rates.
+- Banks should prioritize Grades A–C for lower-risk lending and apply stricter credit assessments and risk controls for Grades D–G to minimize financial losses.
+
+### Q5. How do interest rates vary between defaulted and non-defaulted loans?
+
+<img width="1032" height="662" alt="5 violin plot" src="https://github.com/user-attachments/assets/f7006ebc-af9c-4a2c-aeee-ff27ec6f4131" />
+
+
+### Observation:
+- Non-default borrowers have a median interest rate of approximately 11%, with most rates concentrated between 8% and 13%.
+- Default borrowers have a higher median interest rate of approximately 13.5%, with significant concentrations around 12% and 16%.
+### Conclusion:
+- Higher interest rates are associated with increased loan default risk, indicating that interest rate is an important factor in credit risk analysis.
+- Banks should carefully assess borrowers' repayment capacity and interest rate affordability to reduce defaults and improve loan recovery.
+
+### Q6. Which loan purposes have the highest default rates?
+
+<img width="1357" height="627" alt="6 barh" src="https://github.com/user-attachments/assets/e50663b0-497c-4c45-9838-b29f78618ab5" />
+
+
+### Observation:
+- Debt consolidation has the highest default rate at 28.7%, followed by Medical (26.8%) and Home Improvement (26.2%).
+- Venture loans have the lowest default rate at 14.9%, followed by Education (17.3%) and Personal (19.9%).
+### Conclusion:
+- Loan purpose is an important factor in credit risk assessment, with debt consolidation, medical, and home improvement loans showing higher default risk.
+- Banks should apply stricter repayment capacity assessments for high-risk loan purposes and consider loan purpose when developing lending strategies to minimize defaults.
+
+### Q7. What is the relationship between loan-to-income ratio and loan default risk?
+
+<img width="1213" height="653" alt="7 scatter plot" src="https://github.com/user-attachments/assets/03b9aa2f-2135-44ae-af25-6b85706dacde" />
+
+
+### Observation:
+- Lower-income borrowers show higher loan-to-income ratios, reaching approximately 0.8 (80%), while higher-income borrowers generally have ratios below 0.1 (10%).
+- Both default and non-default cases appear at higher ratios, while income outliers extend up to approximately 6 million.
+### Conclusion:
+- Loan-to-income ratio decreases as borrower income increases, indicating a lower relative debt burden for higher-income borrowers.
+- Banks should assess loan-to-income ratios alongside income and repayment capacity to identify financially vulnerable borrowers and manage credit risk effectively.
+
+### Q8. Which numerical factors are most strongly correlated with loan defaults?
+
+<img width="1182" height="766" alt="8 heatmap" src="https://github.com/user-attachments/assets/20bac7ba-ad00-4cba-8829-45e3f0e6ac1e" />
+
+
+### Observation:
+- Loan-to-income ratio (0.38) and interest rate (0.32) show the strongest positive correlations with loan default (loan_status).
+- Annual income (-0.15) has a negative correlation with default, while age (-0.022) and employment length (-0.075) show very weak relationships.
+- Age and credit history length (0.88) have the strongest overall correlation, followed by loan amount and loan-to-income ratio (0.57).
+### Conclusion:
+- Loan-to-income ratio and interest rate are the strongest numerical indicators of loan default risk in this heatmap.
+- Banks should prioritize repayment capacity, interest rates, and borrower income during credit risk assessment to support better lending decisions and reduce potential defaults.
 
 ##  Key Findings
 
